@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- header -->
+    <header>
+        <nav class="navbar">
+            <h2>Simnple website</h2>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a class="active" href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="signup-buttons">
+              
+                <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Log In
+                   </button>
+            </div>
+        </nav>
+    </header>
+    <!-- about -->
+    <div class="text-center justify-content-center row mt-5">
+    <h2 class="heading">About</h2>
+<p class="container col-lg-10">
+    PHP (Hypertext Processor) is a general-purpose scripting language and interpreter that is freely available and widely used for web development. The language is used primarily for server-side scripting, although it can also be used for command-line scripting and, to a limited degree, desktop applications. The acronym PHP was originally derived from Personal Home Page Tools, but it now stands for PHP: Hypertext Preprocessor, which the PHP Group's documentation describes as a "recursive acronym."
+
+When used for server-side scripting, PHP is added to a webpage for the purpose of generating dynamic content when the page is accessed through a client browser. The web server runs the script before transmitting the page to the browser. To support this process, the web server requires PHP to be installed on the server, along with a PHP parser -- either a Common Gateway Interface (CGI) parser or a server module.
+
+When a user requests a webpage from the server, the parser interprets the PHP portion of the page, performs the operations called for in the PHP script, and generates the Hypertext Markup Language (HTML) that results from those operations. The HTML is then sent to the client browser, along with any other HTML on the page, providing a seamless rendering of the content. Webpages that contain PHP script are considered to be dynamic HTML pages because content varies based on the results of interpreting the script.
+</p></div>
+<!-- Moidal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Enter yout credentials</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <footer>
+        <div class="footer">
+        <div class="footer-1"> <h1>Information</h1>
+          <p><a href="#">About us</a><br>
+              <a href="#">Delivery imformation</a><br>
+              <a href="#">Privacy policy</a><br>
+              <a href="#">Site Map</a><br></p></div>
+  
+              <div class="footer-2">   
+                  <h1>Customer Service</h1>
+                  <p><a href="#">Contact</a><br>
+                      <a href="#">Returns</a><br>
+                      <a href="#">Order History</a><br>
+                      <a href="#">Register Account</a><br>
+                      <a href="#">International Shipping Rates</a><br></p></div>
+  
+                      <div class="footer-3"><p>Stay up to date with our news and promotions<br> by signing up for our weekly newsletter<br>
+                          <input type="text" id="user_email_signin"><button><i class="fa-solid fa-magnifying-glass fa-sm"></i></button>
+                         </p></div></div>
+          <hr/>
+          <p id="p_footer">© 2023 footer LLC. All Rights Reserved.</p>
+                      </footer>   
+                      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
+</body>
+</html>

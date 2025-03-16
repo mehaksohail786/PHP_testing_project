@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- header -->
+    <header>
+        <nav class="navbar">
+            <h2>soimple website</h2>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+          
+                <a  href="services.html">Services</a>
+                <a class="active" href="contact.html">Contact</a>
+            </div>
+            <div class="signup-buttons">
+              
+                <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+                   Log In
+                  </button>
+            </div>
+        </nav>
+    </header>
+    <!-- contact -->
+    <div class="row mt-5">
+    <h2 class="heading text-center">Contact us</h2>
+    <form class="col-lg-5 offset-lg-1  mb-5">
+        <legend>Contact Details</legend><br><br>
+        <label for="name">Your Name <input type="text" id= "name" placeholder="first name"> <input type="text" placeholder="last name"></label><br><br>
+        <label for="email">Your Email <input type="email" id="email" placeholder="eg.contactme.123@gmail.com"></label><br><br>
+        <label for="Phone">Phone No <input type="text" id="Phone" placeholder="for eg.0312_345678"></label><br><br>
+        <label for="Message">Message Subject </label>
+        <select id="Message" name="Message">
+        <option value="for details">for details</option>
+        <option value="for enquiry">for enquiry</option>
+        <option value="for call">for call</option>
+        <option value="other options">other option</option>
+        </select><br><br>
+        <label for="Message">Message <input type="text" id="Message" placeholder="type your message"></label><br><br>
+        <label><input type="checkbox">Are you 18+</label><br><br>
+        <label> <input type="radio">Are you agree to submit this form</label><br><br>
+        <label ><input class="reset" type="reset"></label>
+        <label><input class="submit" type="submit"></label>
+
+</form>
+<!-- modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Enter yout credentials</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <footer>
+        <div class="footer">
+        <div class="footer-1"> <h1>Information</h1>
+          <p><a href="#">About us</a><br>
+              <a href="#">Delivery imformation</a><br>
+              <a href="#">Privacy policy</a><br>
+              <a href="#">Site Map</a><br></p></div>
+  
+              <div class="footer-2">   
+                  <h1>Customer Service</h1>
+                  <p><a href="#">Contact</a><br>
+                      <a href="#">Returns</a><br>
+                      <a href="#">Order History</a><br>
+                      <a href="#">Register Account</a><br>
+                      <a href="#">International Shipping Rates</a><br></p></div>
+  
+                      <div class="footer-3"><p>Stay up to date with our news and promotions<br> by signing up for our weekly newsletter<br>
+                          <input type="text" id="user_email_signin"><button><i class="fa-solid fa-magnifying-glass fa-sm"></i></button>
+                         </p></div></div>
+          <hr/>
+          <p id="p_footer">© 2023 footer LLC. All Rights Reserved.</p>
+                      </footer>    
+                      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
